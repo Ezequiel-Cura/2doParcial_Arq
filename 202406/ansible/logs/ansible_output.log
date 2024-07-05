@@ -1,0 +1,84 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-05 13:34:53,376 p=3286 u=ezequiel n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-05 13:34:53,668 p=3286 u=ezequiel n=ansible | PLAY [all] ******************************************************************************************************************************************************************************
+2024-07-05 13:34:53,689 p=3286 u=ezequiel n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************
+2024-07-05 13:34:53,853 p=3286 u=ezequiel n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nezequiel@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-07-05 13:34:55,230 p=3286 u=ezequiel n=ansible | ok: [localhost]
+2024-07-05 13:34:55,244 p=3286 u=ezequiel n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************
+2024-07-05 13:34:55,270 p=3286 u=ezequiel n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ezequiel/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 8, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: "Crear directorios en /tmp/2do_parcial/"
+   file:
+   ^ here
+
+2024-07-05 13:36:13,697 p=3408 u=ezequiel n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-05 13:36:13,804 p=3408 u=ezequiel n=ansible | PLAY [all] ******************************************************************************************************************************************************************************
+2024-07-05 13:36:13,810 p=3408 u=ezequiel n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************
+2024-07-05 13:36:13,894 p=3408 u=ezequiel n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nezequiel@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-07-05 13:36:15,003 p=3408 u=ezequiel n=ansible | ok: [localhost]
+2024-07-05 13:36:15,017 p=3408 u=ezequiel n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************
+2024-07-05 13:36:15,035 p=3408 u=ezequiel n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ezequiel/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 13, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     recurse: yes
+   with_items:
+   ^ here
+
+2024-07-05 13:36:51,290 p=3518 u=ezequiel n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-05 13:36:51,389 p=3518 u=ezequiel n=ansible | PLAY [all] ******************************************************************************************************************************************************************************
+2024-07-05 13:36:51,396 p=3518 u=ezequiel n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************
+2024-07-05 13:36:51,623 p=3518 u=ezequiel n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nezequiel@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-07-05 13:36:52,536 p=3518 u=ezequiel n=ansible | ok: [localhost]
+2024-07-05 13:36:52,550 p=3518 u=ezequiel n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************
+2024-07-05 13:36:52,587 p=3518 u=ezequiel n=ansible | TASK [2do_parcial : debug] **************************************************************************************************************************************************************
+2024-07-05 13:36:52,600 p=3518 u=ezequiel n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-07-05 13:36:52,605 p=3518 u=ezequiel n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] *****************************************************************************************************************************
+2024-07-05 13:36:52,911 p=3518 u=ezequiel n=ansible | changed: [localhost] => (item=alumno)
+2024-07-05 13:36:53,092 p=3518 u=ezequiel n=ansible | changed: [localhost] => (item=equipo)
+2024-07-05 13:36:53,105 p=3518 u=ezequiel n=ansible | TASK [2do_parcial : Generar archivo de datos del alumno] ********************************************************************************************************************************
+2024-07-05 13:36:53,691 p=3518 u=ezequiel n=ansible | changed: [localhost]
+2024-07-05 13:36:53,699 p=3518 u=ezequiel n=ansible | TASK [2do_parcial : Generar archivo de datos del equipo] ********************************************************************************************************************************
+2024-07-05 13:36:54,105 p=3518 u=ezequiel n=ansible | changed: [localhost]
+2024-07-05 13:36:54,112 p=3518 u=ezequiel n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] ********************************************************************************************************************
+2024-07-05 13:36:54,466 p=3518 u=ezequiel n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/etc/sudoers'
+2024-07-05 13:36:54,467 p=3518 u=ezequiel n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/ezequiel/.ansible/tmp/ansible-tmp-1720186614.1340334-3749-274877775897773/AnsiballZ_lineinfile.py\", line 107, in <module>\n    _ansiballz_main()\n  File \"/home/ezequiel/.ansible/tmp/ansible-tmp-1720186614.1340334-3749-274877775897773/AnsiballZ_lineinfile.py\", line 99, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/ezequiel/.ansible/tmp/ansible-tmp-1720186614.1340334-3749-274877775897773/AnsiballZ_lineinfile.py\", line 47, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.lineinfile', init_globals=dict(_module_fqn='ansible.modules.lineinfile', _modlib_path=modlib_path),\n  File \"/usr/lib/python3.10/runpy.py\", line 224, in run_module\n    return _run_module_code(code, init_globals, run_name, mod_spec)\n  File \"/usr/lib/python3.10/runpy.py\", line 96, in _run_module_code\n    _run_code(code, mod_globals, init_globals,\n  File \"/usr/lib/python3.10/runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"/tmp/ansible_lineinfile_payload_oamjyuei/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 638, in <module>\n  File \"/tmp/ansible_lineinfile_payload_oamjyuei/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 628, in main\n  File \"/tmp/ansible_lineinfile_payload_oamjyuei/ansible_lineinfile_payload.zip/ansible/modules/lineinfile.py\", line 317, in present\nPermissionError: [Errno 13] Permission denied: b'/etc/sudoers'\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-07-05 13:36:54,468 p=3518 u=ezequiel n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************
+2024-07-05 13:36:54,468 p=3518 u=ezequiel n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-05 13:36:54,468 p=3518 u=ezequiel n=ansible | localhost                  : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

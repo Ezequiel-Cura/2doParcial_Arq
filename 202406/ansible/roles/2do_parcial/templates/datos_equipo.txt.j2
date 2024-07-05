@@ -1,0 +1,4 @@
+Equipo: tu-equipo
+IP: {{ ansible_default_ipv4.address }}
+Todas las IP: {{ ansible_all_ipv4_addresses | join(', ') }}
+
